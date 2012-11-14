@@ -1,7 +1,21 @@
 ;; add load path
-(setq load-path (cons "~/.emacs.d" load-path))
-(setq load-path (cons "~/.emacs.d/customize" load-path))
-(setq load-path (cons "~/.emacs.d/utils" load-path))
+;(setq load-path (cons "~/.emacs.d" load-path))
+;(setq load-path (cons "~/.emacs.d/customize" load-path))
+;(setq load-path (cons "~/.emacs.d/utils" load-path))
+
+;;;;;;;;;;;;;;;;;;;;;;add by Hadwin start;;;;;;;;;;;;;;;;;;;
+;;try to load all config file under this folder
+(let ((base "~/.emacs.d"))       ;;;u can change ur own base directory here
+  (add-to-list 'load-path base)
+  (dolist (f (directory-files base))
+    (let ((name (concat base "/" f)))
+      (when (and (file-directory-p name) 
+                 (not (equal f ".."))
+                 (not (equal f ".")))
+        (add-to-list 'load-path name)))))
+
+;;;;;;;;;;;;;;;;;;;;;;add by Hadwin end ;;;;;;;;;;;;;;;;;;;;
+
 
 ;; load configurations for different systems  
 (if (string-equal system-type "darwin")
