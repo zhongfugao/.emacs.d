@@ -1,0 +1,12 @@
+\#*\#
+*.elc
+.DS_Store
+langmode/python/rope-0.9.4/build/
+langmode/python/ropemode/build/
+.svn
+.backups/
+.emacs.desktop
+.emacs.desktop.lock
+auto-save-list/
+abbrev_defs
+*~
