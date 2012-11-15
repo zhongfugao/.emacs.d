@@ -86,3 +86,4 @@
 (require 'lang-lisp)
 (require 'misc-gnus)
 (require 'misc-translate)
+(load "lang-shell.el")
