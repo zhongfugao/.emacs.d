@@ -4,15 +4,25 @@
 ;(setq load-path (cons "~/.emacs.d/utils" load-path))
 
 ;;;;;;;;;;;;;;;;;;;;;;add by Hadwin start;;;;;;;;;;;;;;;;;;;
-;;try to load all config file under this folder
-(let ((base "~/.emacs.d"))       ;;;u can change ur own base directory here
+;;try to load all config file under the base folder and subfolder, 
+;;now we just support three level folder
+
+(defun scanfolder(base)
   (add-to-list 'load-path base)
   (dolist (f (directory-files base))
     (let ((name (concat base "/" f)))
       (when (and (file-directory-p name) 
-                 (not (equal f ".."))
+		 (not (equal f ".."))
                  (not (equal f ".")))
         (add-to-list 'load-path name)))))
+
+(let ((base "~/.emacs.d"))           ;;;please change the base folder name here
+  (dolist (f (directory-files base))
+    (let ((name (concat base "/" f)))
+      (when (and (file-directory-p name) 
+		 (not (equal f ".."))
+                 (not (equal f ".")))
+	(scanfolder name)))))
 
 ;;;;;;;;;;;;;;;;;;;;;;add by Hadwin end ;;;;;;;;;;;;;;;;;;;;
 
@@ -80,10 +90,11 @@
 
 
 ;; load customized configuration
-;;(require 'lang-python)
-;;(require 'lang-java)
+;(require 'lang-python)
+;(require 'lang-java)
 (require 'lang-ruby)
 (require 'lang-lisp)
 (require 'misc-gnus)
 (require 'misc-translate)
-(load "lang-shell.el")
+(require 'lang-shell)
+

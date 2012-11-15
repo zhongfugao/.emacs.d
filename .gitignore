@@ -10,3 +10,4 @@ langmode/python/ropemode/build/
 auto-save-list/
 abbrev_defs
 *~
+.session

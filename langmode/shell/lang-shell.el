@@ -1,4 +1,5 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;Shell;;;;;;;;;;;;;;;;;;;;;;;;
+(provide 'lang-shell)
 
 ;;change color of folder
 (custom-set-variables
