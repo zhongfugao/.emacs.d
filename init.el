@@ -1,7 +1,7 @@
 ;; add load path
-;(setq load-path (cons "~/.emacs.d" load-path))
-;(setq load-path (cons "~/.emacs.d/customize" load-path))
-;(setq load-path (cons "~/.emacs.d/utils" load-path))
+(setq load-path (cons "~/.emacs.d" load-path))
+(setq load-path (cons "~/.emacs.d/customize" load-path))
+(setq load-path (cons "~/.emacs.d/utils" load-path))
 
 ;;;;;;;;;;;;;;;;;;;;;;add by Hadwin start;;;;;;;;;;;;;;;;;;;
 ;;try to load all config file under the base folder and subfolder, 
@@ -96,5 +96,5 @@
 (require 'lang-lisp)
 (require 'misc-gnus)
 (require 'misc-translate)
-(require 'lang-shell)
+;;(require 'lang-shell)
 
