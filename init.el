@@ -90,8 +90,8 @@
 
 
 ;; load customized configuration
-;(require 'lang-python)
-;(require 'lang-java)
+(require 'lang-python)
+;;(require 'lang-java)
 (require 'lang-ruby)
 (require 'lang-lisp)
 (require 'misc-gnus)
