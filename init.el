@@ -89,6 +89,9 @@
 (global-set-key (kbd "C-x C-c") 'ask-before-closing)
 
 
+;;load lang-help-yasnippet
+(require 'lang-help-yasnippet)
+
 ;; load customized configuration
 (require 'lang-python)
 ;;(require 'lang-java)
