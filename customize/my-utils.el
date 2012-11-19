@@ -63,6 +63,6 @@
 (require 'misc-org)
 
 ;; w3m mode
-(add-to-list 'load-path "~/.emacs.d/plugin/emacs-w3m")
+(add-to-list 'load-path "~/.emacs.d/plugins/emacs-w3m")
 (require 'w3m-load)
 ;;(require 'mime-w3m)

@@ -1,5 +1,5 @@
 ;; JDEE configuration
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/plugin/jdee/lisp"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/plugins/jdee/lisp"))
 
 (defun screen-width nil -1)
 (define-obsolete-function-alias 'make-local-hook 'ignore "21.1")
@@ -16,12 +16,12 @@
 ;;(provide 'semantic-java)
 ;;(provide 'semantic-imenu)
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/plugin/cedet-1.1/common"))
-(load-file "~/.emacs.d/plugin/cedet-1.1/common/cedet.el")
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/plugins/cedet-1.1/common"))
+(load-file "~/.emacs.d/plugins/cedet-1.1/common/cedet.el")
 
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/plugin/elib-1.0"))
-(add-to-list 'load-path (expand-file-name "~/.emacs.d/plugin/ecb-2.40"))
-(load-file (expand-file-name "~/.emacs.d/plugin/ecb-2.40/ecb.el"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/plugins/elib-1.0"))
+(add-to-list 'load-path (expand-file-name "~/.emacs.d/plugins/ecb-2.40"))
+(load-file (expand-file-name "~/.emacs.d/plugins/ecb-2.40/ecb.el"))
 
 (require 'font-lock)
 (require 'ecb)
