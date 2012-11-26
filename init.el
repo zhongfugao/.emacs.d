@@ -99,5 +99,6 @@
 (require 'lang-lisp)
 (require 'misc-gnus)
 (require 'misc-translate)
+(require 'misc-yodao-dictionary)
 ;;(require 'lang-shell)
 
