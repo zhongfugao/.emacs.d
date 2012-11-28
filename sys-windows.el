@@ -20,3 +20,5 @@
 ;; add the cygwin path
 (if (file-directory-p "c:/work/cygwin/bin")
         (add-to-list 'exec-path "c:/work/cygwin/bin"))
+
+(setq shell-file-name "c:/work/cygwin/bin/bash")
