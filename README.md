@@ -44,8 +44,8 @@ nohup emacs &
 - C-c !
   open a python shell
   
-### java dev ###
 
+### java dev ###
 #### jdee install ####
 - prerequisite
   - ecb 2.40
@@ -57,3 +57,24 @@ nohup emacs &
   - auto complete not work on Mac OS, error of can not find the tools.jar. And solution for it is:
   <https://github.com/shyamalprasad/jdee/commit/51604758af9fc9984618260953f02dc7d6a325c1>
   
+
+
+### AucTex ###
+- prerequisite
+  - tex live 2012
+
+- install
+  - version 11.87, latex-preview has problem with 11.86.
+  - compile
+  
+  ```shell
+  ./configure --with-emacs=/Applications/Emacs.app/Contents/MacOS/Emacs --with-lispdir=/Applications/Emacs.app/Contents/Resources/site-lisp --with-texmf-dir=/usr/local/texlive/texmf-local
+  ```
+  
+  ```shell
+  make
+  ```
+  
+  ```shell
+  sudo make install
+  ```

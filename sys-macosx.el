@@ -9,3 +9,4 @@
 ;;(setq exec-path (append '("/usr/local/bin" "/usr/local/sbin") exec-path))
 
 (require 'init-exec-path)
+(require 'lang-auctex)
