@@ -100,5 +100,6 @@
 (require 'misc-gnus)
 (require 'misc-translate)
 (require 'misc-yodao-dictionary)
+(require 'misc-chat)
 ;;(require 'lang-shell)
 
