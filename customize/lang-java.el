@@ -4,18 +4,6 @@
 (defun screen-width nil -1)
 (define-obsolete-function-alias 'make-local-hook 'ignore "21.1")
 
-;; 解决Cannot open load file: semantic-ctxt
-;;(require 'semantic/analyze)
-;;(provide 'semantic-analyze)
-;;(provide 'semantic-ctxt)
-;;(provide 'semanticdb)
-;;(provide 'semanticdb-find)
-;;(provide 'semanticdb-mode)
-;;(provide 'semantic-load)
-;;(provide 'semantic-sb)
-;;(provide 'semantic-java)
-;;(provide 'semantic-imenu)
-
 (add-to-list 'load-path (expand-file-name "~/.emacs.d/plugins/cedet-1.1/common"))
 (load-file "~/.emacs.d/plugins/cedet-1.1/common/cedet.el")
 
@@ -41,10 +29,6 @@
                  '(("\\.java\\'" . jde-mode))
                  auto-mode-alist)))
       (require 'jde))
-(setq jde-jdk-registry 
-	 (quote (("1.6.0_35" . "/System/Library/Java/JavaVirtualMachines/1.6.0.jdk/Contents")
-		 ("1.7.0_07" . "/Library/Java/JavaVirtualMachines/jdk1.7.0_07.jdk/Contents"))))
-(setq jde-jdk '("1.6.0_35"))
 
 (setq semantic-default-submodes '(global-semantic-idle-scheduler-mode
                                       global-semanticdb-minor-mode
