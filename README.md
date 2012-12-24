@@ -60,6 +60,7 @@ nohup emacs &
 
 
 ### AucTex ###
+#### Mac OS ####
 - prerequisite
   - tex live 2012
 
@@ -77,4 +78,13 @@ nohup emacs &
   
   ```shell
   sudo make install
+  ```
+
+#### Ubuntu ####
+- install
+  - compile  
+  ```shell
+  ./configure --with-emacs=/usr/local/bin/emacs --with-lispdir=/usr/local/share/emacs/24.2/lisp  
+  make  
+  sudo make install  
   ```
