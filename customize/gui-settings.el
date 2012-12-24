@@ -5,10 +5,10 @@
 (if (fboundp 'tool-bar-mode) (tool-bar-mode 0))
 
 ;; Maximize windows
-(require 'maxframe)
-(add-hook 'window-setup-hook 'maximize-frame t)
+;;(require 'maxframe)
+;;(add-hook 'window-setup-hook 'maximize-frame t)
 
-(message "max frame is set.")
+;;(message "max frame is set.")
 
 ;; Speedbar hotkey
 (global-set-key [(f8)] 'speedbar)

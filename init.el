@@ -32,7 +32,8 @@
   (load "sys-macosx.el"))
 
 (cond ((string-equal system-type "windows-nt")
-      (load "sys-windows.el")))
+      (load "sys-windows.el"))
+      (t (load "sys-linux.el")))
 
 ;; Desktop save mode
 (desktop-save-mode 1)
@@ -93,7 +94,7 @@
 (require 'lang-help-yasnippet)
 
 ;; load customized configuration
-(require 'lang-python)
+;;(require 'lang-python)
 (require 'lang-java)
 (require 'lang-ruby)
 (require 'lang-lisp)
