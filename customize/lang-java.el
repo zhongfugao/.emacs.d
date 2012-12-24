@@ -18,6 +18,8 @@
 
 (message "JDE is loaded")
 
+(setq jde-complete-function (quote jde-complete-in-line))
+
 ;; defer the loading of jde
 (setq defer-loading-jde t)
 ;;
