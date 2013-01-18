@@ -103,4 +103,4 @@
 (require 'misc-yodao-dictionary)
 (require 'misc-chat)
 ;;(require 'lang-shell)
-
+(require 'lang-cc)
