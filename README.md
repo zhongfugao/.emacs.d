@@ -84,7 +84,13 @@ nohup emacs &
 - install
   - compile  
   ```shell
-  ./configure --with-emacs=/usr/local/bin/emacs --with-lispdir=/usr/local/share/emacs/24.2/lisp  
-  make  
+  ./configure --with-emacs=/usr/local/bin/emacs --with-lispdir=/usr/local/share/emacs/24.2/lisp
+  ```
+  
+  ```shell
+  make
+  ```
+  
+  ```shell
   sudo make install 
   ```
