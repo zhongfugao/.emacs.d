@@ -28,7 +28,10 @@
 	    ;; fix tab
 	    (local-set-key "\C-y" 'yank)
 	    ;; yasnippet (allow yasnippet to do its thing in org files
-	    (org-set-local 'yas/trigger-key [tab])
+	    
+		;; publish
+		(local-set-key "\M-e" 'org-export-as-html)
+		(org-set-local 'yas/trigger-key [tab])
 	    (define-key yas/keymap [tab] 'yas/next-field-group)))
 
 (provide 'misc-org)

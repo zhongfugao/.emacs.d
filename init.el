@@ -104,3 +104,6 @@
 (require 'misc-chat)
 ;;(require 'lang-shell)
 (require 'lang-cc)
+
+
+;;(eval-after-load 'shell '(require 'misc-shell))

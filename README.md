@@ -82,9 +82,14 @@ nohup emacs &
 
 #### Ubuntu ####
 - install
-  - compile  
   ```shell
-  ./configure --with-emacs=/usr/local/bin/emacs --with-lispdir=/usr/local/share/emacs/24.2/lisp  
-  make  
-  sudo make install  
+  ./configure --with-emacs=/usr/local/bin/emacs --with-lispdir=/usr/local/share/emacs/24.2/lisp
+  ```
+  
+  ```shell
+  make
+  ```
+  
+  ```shell
+  sudo make install 
   ```
